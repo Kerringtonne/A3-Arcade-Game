@@ -17,7 +17,7 @@ public class PlayerShoot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            var proj = Instantiate(bulletPrefab, transform.position + Vector3.up * 0.5f, Quaternion.identity);
+            var proj = Instantiate(bulletPrefab, transform.position + Vector3.up * 0.4f, Quaternion.identity);
             proj.GetComponent<Rigidbody2D>().linearVelocity = Vector2.up * bulletSpeed;
             Destroy(proj, lifetime);
         }

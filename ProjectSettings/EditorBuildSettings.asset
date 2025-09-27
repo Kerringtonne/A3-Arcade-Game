@@ -15,14 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 917da1db6095f7044819900873c71c8b
   - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
+    path: Assets/Scenes/Level 1.unity
     guid: 5accf356a899b394e9f3f46bb9be0bf3
   - enabled: 1
-    path: Assets/Scenes/Lose.unity
-    guid: c721b59ede3c8ef4f9a05b6b6a29dc9d
+    path: Assets/Scenes/Retry.unity
+    guid: 3f58da07be93f254788c7c5970ca8158
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 5b763f89ad264ba4894a9cb5f9f370ef
+  - enabled: 0
+    path: Assets/Scenes/Lose.unity
+    guid: c721b59ede3c8ef4f9a05b6b6a29dc9d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
