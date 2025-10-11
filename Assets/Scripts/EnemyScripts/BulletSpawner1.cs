@@ -46,13 +46,13 @@ public class BulletSpawner1 : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(10);
-            spawnerType = SpawnerType.Spray; // switches after 5 sec
-            yield return new WaitForSeconds(5);
+            spawnerType = SpawnerType.Spray;
+            yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spray;
-            yield return new WaitForSeconds(5);
-            spawnerType = SpawnerType.SlowSpin;
+            yield return new WaitForSeconds(10);
+            spawnerType = SpawnerType.Spin;
         }
     }
 

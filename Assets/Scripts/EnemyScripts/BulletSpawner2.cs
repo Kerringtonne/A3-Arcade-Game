@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class BulletSpawner2 : MonoBehaviour
 {
-    enum SpawnerType { Spin, Spray, SlowSpin }
+    enum SpawnerType { Spin, Spray, SlowSpin, QuickSpin }
 
     [Header("Bullet Attributes")]
     public GameObject bullet;
@@ -54,13 +54,16 @@ public class BulletSpawner2 : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(10);
-            spawnerType = SpawnerType.Spray; // switches after 5 sec
-            yield return new WaitForSeconds(5);
-            spawnerType = SpawnerType.Spin;
+            spawnerType = SpawnerType.SlowSpin;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spray;
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(10);
+            spawnerType = SpawnerType.Spin;
+            yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.SlowSpin;
+            yield return new WaitForSeconds(10);
+            spawnerType = SpawnerType.Spray;
+
         }
     }
 
@@ -69,7 +72,8 @@ public class BulletSpawner2 : MonoBehaviour
         timer += Time.deltaTime;
         if (spawnerType == SpawnerType.Spin) transform.eulerAngles = new Vector3 (0f, 0f, transform.eulerAngles.z + rotationSpeed * Time.deltaTime);
         if (spawnerType == SpawnerType.Spray) transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + rotationSpeed * Time.deltaTime * -2);
-        if (spawnerType == SpawnerType.SlowSpin) transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + rotationSpeed * Time.deltaTime * 0.5f);
+        if (spawnerType == SpawnerType.SlowSpin) transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + rotationSpeed * Time.deltaTime * 0.3f);
+        if (spawnerType == SpawnerType.QuickSpin) transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + rotationSpeed * Time.deltaTime * 5f);
         if (timer >= firingRate)
         {
             Fire();
