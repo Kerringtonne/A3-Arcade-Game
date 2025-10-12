@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 8899865660688369505}
   - component: {fileID: 8196537569745845383}
   - component: {fileID: 8525636021610813806}
-  - component: {fileID: 529119266920494804}
+  - component: {fileID: 5142110433877120683}
   - component: {fileID: 8559426576799504197}
   - component: {fileID: 2281053101752175618}
   m_Layer: 7
@@ -270,10 +270,10 @@ MonoBehaviour:
   bulletSpeed: 5
   bullet2: {fileID: 5833002007787393076, guid: f1fdf839518dcf84289628b8abd18363, type: 3}
   bulletSpeed2: 5
-  rotationSpeed: 300
+  rotationSpeed: 200
   spawnerType: 2
   firingRate: 0.05
---- !u!114 &529119266920494804
+--- !u!114 &5142110433877120683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -282,16 +282,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7260516911437674689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe814cb047b705d40a7a6338775875f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3085ee630fca9f248a36c48fd6b1ba29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 0}
   bulletSpeed: 0
   bullet2: {fileID: 5833002007787393076, guid: 01b3ebbf513ac5149b67a7ecd850bbeb, type: 3}
-  bulletSpeed2: 3
+  bulletSpeed2: 4
   rotationSpeed: 180
   spawnerType: 0
-  firingRate: 0.1
+  firingRate: 0.2
 --- !u!114 &8559426576799504197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236e3d836aedcb14d8b45440f32fe403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 60
+  maxHealth: 100
   currentHealth: 0
 --- !u!114 &2281053101752175618
 MonoBehaviour:
@@ -319,5 +319,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  smoothTime: 1
+  smoothTime: 2
   target: {x: 0, y: 3}

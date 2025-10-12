@@ -53,14 +53,20 @@ public class BulletSpawner2 : MonoBehaviour
     {
         while (true)
         {
+            firingRate = 0.15f;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.SlowSpin;
             yield return new WaitForSeconds(10);
-            spawnerType = SpawnerType.Spray;
+            spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.SlowSpin;
+            firingRate = 0.1f;
+            yield return new WaitForSeconds(10);
+            spawnerType = SpawnerType.SlowSpin;
+            yield return new WaitForSeconds(10);
+            spawnerType = SpawnerType.Spray;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spray;
         }

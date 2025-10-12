@@ -2,16 +2,15 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class BulletSpawner1 : MonoBehaviour
+public class BulletSpawner3 : MonoBehaviour
 {
     enum SpawnerType { Spin, Spray, SlowSpin, SlowerSpin }
 
     [Header("Bullet Attributes")]
     public GameObject bullet;
     public float bulletSpeed = 1f;
-    public GameObject bullet2;
-    public float bulletSpeed2 = 2f;
     public float rotationSpeed = 90f; // rotation degree per second
+    public int bulletCount = 2;
 
     [Header("Spawner Attributes")]
     [SerializeField] private SpawnerType spawnerType;
@@ -21,18 +20,11 @@ public class BulletSpawner1 : MonoBehaviour
     private float timer = 0f;
     private void Fire()
     {
-        if (bullet)
+        for (int i = 1; i <= bulletCount; i++)
         {
             spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
             spawnedBullet.GetComponent<Bullet>().speed = bulletSpeed;
-            spawnedBullet.transform.rotation = transform.rotation;
-        }
-
-        if (bullet2)
-        {
-            spawnedBullet = Instantiate(bullet2, transform.position, Quaternion.identity);
-            spawnedBullet.GetComponent<Bullet>().speed = -bulletSpeed2;
-            spawnedBullet.transform.rotation = transform.rotation;
+            spawnedBullet.transform.rotation = transform.rotation * Quaternion.Euler(transform.rotation.x, transform.rotation.y, transform.rotation.z + i * 360 / bulletCount);
         }
     }
 
@@ -45,8 +37,11 @@ public class BulletSpawner1 : MonoBehaviour
     {
         while (true)
         {
-            firingRate = 0.05f;
+            bulletCount = 1;
+            firingRate = 0.2f;
+            rotationSpeed = 200;
             yield return new WaitForSeconds(10);
+            bulletCount = 2;
             spawnerType = SpawnerType.Spray;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spin;

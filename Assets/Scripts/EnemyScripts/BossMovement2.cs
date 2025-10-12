@@ -19,14 +19,18 @@ public class BossMovement2 : MonoBehaviour
         {
             yield return new WaitForSeconds(10);
             target = new Vector2(0, 1.5f);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(10);
             target = new Vector2(2.5f, 1.5f);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(10);
             target = new Vector2(-2.5f, 1.5f);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(10);
+            target = new Vector2(0, 1.5f);
+            yield return new WaitForSeconds(10);
+            target = new Vector2(0, 2.5f);
+            yield return new WaitForSeconds(10);
+            target = new Vector2(-2.5f, 1.5f);
+            yield return new WaitForSeconds(10);
             target = new Vector2(2.5f, 1.5f);
-            yield return new WaitForSeconds(5);
-            target = new Vector2(-2.5f, 1.5f);
         }
     }
 

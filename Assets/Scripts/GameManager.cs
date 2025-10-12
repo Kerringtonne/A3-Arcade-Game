@@ -1,32 +1,21 @@
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager instance;
+    private float startTime;
+    public TextMeshProUGUI timerText;
 
-    void Awake()
+    void Start()
     {
-        Instance = this;
+        startTime = Time.time;
     }
 
-    public void Win()
+    void Update()
     {
-        Debug.Log("You Win!");
-        // show win, load next level, etc
+        float totalTime = Time.time - startTime;
+        PlayerPrefs.SetFloat("FinishTime", totalTime);
+        timerText.text = totalTime.ToString("F1");
     }
-
-    public void GameOver()
-    {
-        Debug.Log("Game Over!");
-        // show lose screen, restart, etc
-    }
-
-    private void Update()
-    {
-        if (GameObject.FindGameObjectsWithTag("Boss").Length == 0)
-        {
-            Win();
-        }
-    }
-
 }

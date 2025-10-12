@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,6 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 3;
     public int currentHealth;
+    public TextMeshProUGUI healthText;
 
     void Start()
     {
@@ -22,6 +24,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        
+        healthText.text = "Health: " + currentHealth.ToString();
     }
 }
