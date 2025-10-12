@@ -63,7 +63,6 @@ public class BulletSpawner2 : MonoBehaviour
             spawnerType = SpawnerType.SlowSpin;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spray;
-
         }
     }
 
