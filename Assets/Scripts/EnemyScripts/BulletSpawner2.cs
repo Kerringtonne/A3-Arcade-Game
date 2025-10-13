@@ -8,9 +8,8 @@ public class BulletSpawner2 : MonoBehaviour
 
     [Header("Bullet Attributes")]
     public GameObject bullet;
-    public float bulletSpeed = 1f;
     public GameObject bullet2;
-    public float bulletSpeed2 = 2f;
+    public float bulletSpeed = 1f;
     public float rotationSpeed = 90f; // rotation degree per second
 
     [Header("Spawner Attributes")]
@@ -35,11 +34,11 @@ public class BulletSpawner2 : MonoBehaviour
         if (bullet2)
         {
             spawnedBullet = Instantiate(bullet2, transform.position, Quaternion.identity);
-            spawnedBullet.GetComponent<Bullet>().speed = bulletSpeed2 * 0.8f;
+            spawnedBullet.GetComponent<Bullet>().speed = bulletSpeed * 0.8f;
             spawnedBullet.transform.rotation = transform.rotation * Quaternion.Euler(0f, 0f, 90f);
 
             spawnedBullet = Instantiate(bullet2, transform.position, Quaternion.identity);
-            spawnedBullet.GetComponent<Bullet>().speed = -bulletSpeed2 * 0.8f;
+            spawnedBullet.GetComponent<Bullet>().speed = -bulletSpeed * 0.8f;
             spawnedBullet.transform.rotation = transform.rotation * Quaternion.Euler(0f, 0f, 90f);
         }
     }
@@ -54,6 +53,8 @@ public class BulletSpawner2 : MonoBehaviour
         while (true)
         {
             firingRate = 0.15f;
+            bulletSpeed = 4;
+            rotationSpeed = 270;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.SlowSpin;
             yield return new WaitForSeconds(10);
@@ -61,10 +62,15 @@ public class BulletSpawner2 : MonoBehaviour
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);
+            firingRate = 0.2f;
+            bulletSpeed = 2;
+            rotationSpeed = 400;
             spawnerType = SpawnerType.SlowSpin;
-            firingRate = 0.1f;
             yield return new WaitForSeconds(10);
-            spawnerType = SpawnerType.SlowSpin;
+            firingRate = 0.2f;
+            bulletSpeed = 3;
+            rotationSpeed = 200;
+            spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spray;
             yield return new WaitForSeconds(10);

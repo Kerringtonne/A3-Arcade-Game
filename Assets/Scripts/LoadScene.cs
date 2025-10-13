@@ -12,7 +12,6 @@ public class LoadScene : MonoBehaviour
         StartCoroutine(DelaySceneLoad());
     }
 
-    // Delays loading scene so sound effect can play
     public IEnumerator DelaySceneLoad()
     {
         yield return new WaitForSeconds(delayTime);

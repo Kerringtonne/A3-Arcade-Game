@@ -38,26 +38,34 @@ public class BulletSpawner3 : MonoBehaviour
         while (true)
         {
             bulletCount = 1;
-            firingRate = 0.2f;
+            firingRate = 0.05f;
             rotationSpeed = 200;
+            bulletSpeed = 1;
+            spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);
-            bulletCount = 2;
+            firingRate = 0.1f;
+            bulletCount = 3;
+            bulletSpeed = 2;
+            rotationSpeed = 90;
             spawnerType = SpawnerType.Spray;
             yield return new WaitForSeconds(10);
+            spawnerType = SpawnerType.Spin;
+            yield return new WaitForSeconds(10);
+            spawnerType = SpawnerType.SlowSpin;
+            yield return new WaitForSeconds(10);
+            spawnerType = SpawnerType.Spin;
+            yield return new WaitForSeconds(10);
+            bulletCount = 3;
+            firingRate = 0.2f;
+            bulletSpeed = 3;
+            rotationSpeed = 200;
             spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spray;
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);
-            spawnerType = SpawnerType.Spray;
-            firingRate = 0.04f;
-            yield return new WaitForSeconds(10);
-            spawnerType = SpawnerType.Spin;
-            yield return new WaitForSeconds(10);
-            spawnerType = SpawnerType.Spray;
-            yield return new WaitForSeconds(10);
-            spawnerType = SpawnerType.Spin;
+            spawnerType = SpawnerType.SlowSpin;
         }
     }
 

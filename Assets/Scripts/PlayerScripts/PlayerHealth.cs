@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 3;
     public int currentHealth;
     public TextMeshProUGUI healthText;
+    public string sceneName = "Scene";
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= amount;
         if (currentHealth <= 0)
         {
-            SceneManager.LoadScene("Retry");
+            SceneManager.LoadScene(sceneName);
         }
     }
 

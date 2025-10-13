@@ -22,5 +22,16 @@ public class PlayerController : MonoBehaviour
         Vector2 position = (Vector2)transform.position + move * speed * Time.deltaTime;
         transform.position = position;
         transform.position = new Vector2(Mathf.Clamp(transform.position.x, -4.859f, 4.859f), Mathf.Clamp(transform.position.y, -4.855f, 4.706f));
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            speed = 2;
+        }
+
+        else
+        {
+            speed = 4;
+        }
+
     }
 }
