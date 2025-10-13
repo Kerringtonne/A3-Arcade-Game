@@ -55,9 +55,9 @@ public class BulletSpawner3 : MonoBehaviour
             yield return new WaitForSeconds(10);
             spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);
-            bulletCount = 3;
+            bulletCount = 4;
             firingRate = 0.2f;
-            bulletSpeed = 3;
+            bulletSpeed = 4;
             rotationSpeed = 200;
             spawnerType = SpawnerType.Spin;
             yield return new WaitForSeconds(10);

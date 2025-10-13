@@ -67,7 +67,7 @@ public class BulletSpawner2 : MonoBehaviour
             rotationSpeed = 400;
             spawnerType = SpawnerType.SlowSpin;
             yield return new WaitForSeconds(10);
-            firingRate = 0.2f;
+            firingRate = 0.1f;
             bulletSpeed = 3;
             rotationSpeed = 200;
             spawnerType = SpawnerType.Spin;

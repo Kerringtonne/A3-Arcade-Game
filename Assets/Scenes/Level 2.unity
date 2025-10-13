@@ -223,7 +223,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 3eb77eccea5ed1841aab75e7c0591361, type: 3}
   m_Resource: {fileID: 8300000, guid: 3eb77eccea5ed1841aab75e7c0591361, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -836,6 +836,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &645782340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 645782342}
+  - component: {fileID: 645782341}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &645782341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645782340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d318e48dd117b1640a878b470acbb698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Win2
+  delayTime: 1
+--- !u!4 &645782342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645782340}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.20692937, y: -1.1450602, z: -0.06481175}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &673243385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,6 +2437,10 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1510528600}
+    - target: {fileID: 5327410952968559446, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
+      propertyPath: loadSceneScript
+      value: 
+      objectReference: {fileID: 645782341}
     - target: {fileID: 7868325786716936503, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
       propertyPath: m_Name
       value: Boss 2
@@ -2412,3 +2462,4 @@ SceneRoots:
   - {fileID: 369755285}
   - {fileID: 481970296}
   - {fileID: 244966128}
+  - {fileID: 645782342}

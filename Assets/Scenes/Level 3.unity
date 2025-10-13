@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &215609692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215609694}
+  - component: {fileID: 215609693}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &215609693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215609692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d318e48dd117b1640a878b470acbb698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Win3
+  delayTime: 1
+--- !u!4 &215609694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215609692}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.20692937, y: -1.1450602, z: -0.06481175}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &369755283
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,10 +192,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e8f8501f5b0ef7847878ade32b5c3f8c, type: 3}
-  m_Resource: {fileID: 8300000, guid: e8f8501f5b0ef7847878ade32b5c3f8c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 54428490cd611c84484e5a887876b45e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 54428490cd611c84484e5a887876b45e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2268,6 +2314,10 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1510528600}
+    - target: {fileID: 4432118875744070950, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
+      propertyPath: loadSceneScript
+      value: 
+      objectReference: {fileID: 215609693}
     - target: {fileID: 8565960165100590343, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
       propertyPath: m_Name
       value: Boss 3
@@ -2436,3 +2486,4 @@ SceneRoots:
   - {fileID: 369755285}
   - {fileID: 481970296}
   - {fileID: 1245778001}
+  - {fileID: 215609694}

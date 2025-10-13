@@ -146,8 +146,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 474d7ce5abaed9d48ad058779b20891e, type: 3}
-  m_Resource: {fileID: 8300000, guid: 474d7ce5abaed9d48ad058779b20891e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c6ab089c1b456934ea990a6792edf8f2, type: 3}
+  m_Resource: {fileID: 8300000, guid: c6ab089c1b456934ea990a6792edf8f2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Died!
+  m_text: You Died
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
