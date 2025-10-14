@@ -461,6 +461,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381526307}
   m_CullTransparentMesh: 1
+--- !u!212 &401972752 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3356839737339793840, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
+  m_PrefabInstance: {fileID: 8922877608759318464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &481970292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,6 +1241,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1165217454 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3970645057204591754, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
+  m_PrefabInstance: {fileID: 8922877608759318464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1182535226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1928,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572622531}
   m_CullTransparentMesh: 1
+--- !u!212 &1725239517 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9050471213798151919, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+  m_PrefabInstance: {fileID: 2285260071903581256}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1760319745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2286,18 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1100646214}
+    - target: {fileID: 1164437512878159092, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+      propertyPath: hitSeconds
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164437512878159092, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+      propertyPath: hitColour.rgba
+      value: 4294003765
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164437512878159092, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1725239517}
     - target: {fileID: 2287507432412701718, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2430,17 +2457,29 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 5327410952968559446, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
-      propertyPath: maxHealth
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 5327410952968559446, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1510528600}
     - target: {fileID: 5327410952968559446, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
+      propertyPath: hitSeconds
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327410952968559446, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
+      propertyPath: hitColour.rgba
+      value: 4294909559
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327410952968559446, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 401972752}
+    - target: {fileID: 5327410952968559446, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
       propertyPath: loadSceneScript
       value: 
       objectReference: {fileID: 645782341}
+    - target: {fileID: 5327410952968559446, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
+      propertyPath: spriteRenderer2
+      value: 
+      objectReference: {fileID: 1165217454}
     - target: {fileID: 7868325786716936503, guid: 067056c009bfb1f488e6573bf55deeba, type: 3}
       propertyPath: m_Name
       value: Boss 2

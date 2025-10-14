@@ -260,6 +260,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261553910}
   m_CullTransparentMesh: 1
+--- !u!212 &332522850 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2564934554880135906, guid: 91752dd2ade549746aa48f521f2c03be, type: 3}
+  m_PrefabInstance: {fileID: 866669922}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &369755283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,9 +1092,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1867899772}
     - target: {fileID: 8559426576799504197, guid: 91752dd2ade549746aa48f521f2c03be, type: 3}
+      propertyPath: hitSeconds
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8559426576799504197, guid: 91752dd2ade549746aa48f521f2c03be, type: 3}
+      propertyPath: hitColour.rgba
+      value: 4286454271
+      objectReference: {fileID: 0}
+    - target: {fileID: 8559426576799504197, guid: 91752dd2ade549746aa48f521f2c03be, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 2055320474}
+    - target: {fileID: 8559426576799504197, guid: 91752dd2ade549746aa48f521f2c03be, type: 3}
       propertyPath: loadSceneScript
       value: 
       objectReference: {fileID: 1889205765}
+    - target: {fileID: 8559426576799504197, guid: 91752dd2ade549746aa48f521f2c03be, type: 3}
+      propertyPath: spriteRenderer2
+      value: 
+      objectReference: {fileID: 332522850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1274,6 +1295,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!212 &1481008964 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9050471213798151919, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+  m_PrefabInstance: {fileID: 1606299537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1539950456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,6 +1691,18 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1539950458}
+    - target: {fileID: 1164437512878159092, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+      propertyPath: hitSeconds
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164437512878159092, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+      propertyPath: hitColour.rgba
+      value: 4294478649
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164437512878159092, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1481008964}
     - target: {fileID: 2287507432412701718, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2314,6 +2352,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2055320474 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5409278156462278401, guid: 91752dd2ade549746aa48f521f2c03be, type: 3}
+  m_PrefabInstance: {fileID: 866669922}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2966232302445379949
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -165,6 +165,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &284934739 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9050471213798151919, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+  m_PrefabInstance: {fileID: 2285260071903581256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &367573415 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 185246295682270216, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
+  m_PrefabInstance: {fileID: 1944823419766986226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &369755283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,6 +1515,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400938010}
   m_CullTransparentMesh: 1
+--- !u!212 &1423999590 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5246754671274740771, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
+  m_PrefabInstance: {fileID: 1944823419766986226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1510528598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,9 +2273,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3285115750064793834, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
-      propertyPath: speed
-      value: 2
+    - target: {fileID: 185246295682270216, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3553307291337788473, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2302,29 +2317,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: 3612553541069174369, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
-      propertyPath: firingRate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3612553541069174369, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
-      propertyPath: spawnerType
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4432118875744070950, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1510528600}
     - target: {fileID: 4432118875744070950, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
+      propertyPath: hitSeconds
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432118875744070950, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
+      propertyPath: hitColour.rgba
+      value: 4287401100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432118875744070950, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1423999590}
+    - target: {fileID: 4432118875744070950, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
       propertyPath: loadSceneScript
       value: 
       objectReference: {fileID: 215609693}
+    - target: {fileID: 4432118875744070950, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
+      propertyPath: spriteRenderer2
+      value: 
+      objectReference: {fileID: 367573415}
     - target: {fileID: 8565960165100590343, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
       propertyPath: m_Name
       value: Boss 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565960165100590343, guid: 07508b54e9b4e7149af46e22e2bbbff6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2347,6 +2366,18 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1100646214}
+    - target: {fileID: 1164437512878159092, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+      propertyPath: hitSeconds
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164437512878159092, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+      propertyPath: hitColour.rgba
+      value: 4294904576
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164437512878159092, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 284934739}
     - target: {fileID: 2287507432412701718, guid: 5a6bca4bf1ae8df48ac01214084dc3c3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2419,15 +2450,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5117764735328742772, guid: e74a6eae882c8774cb663c86fe9d9bb2, type: 3}
       propertyPath: m_Color.b
-      value: 0.7830189
+      value: 0.8962264
       objectReference: {fileID: 0}
     - target: {fileID: 5117764735328742772, guid: e74a6eae882c8774cb663c86fe9d9bb2, type: 3}
       propertyPath: m_Color.g
-      value: 0.7830189
+      value: 0.8962264
       objectReference: {fileID: 0}
     - target: {fileID: 5117764735328742772, guid: e74a6eae882c8774cb663c86fe9d9bb2, type: 3}
       propertyPath: m_Color.r
-      value: 0.7830189
+      value: 0.8962264
       objectReference: {fileID: 0}
     - target: {fileID: 9200888169299721214, guid: e74a6eae882c8774cb663c86fe9d9bb2, type: 3}
       propertyPath: m_LocalPosition.x
